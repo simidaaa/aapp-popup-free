@@ -1,0 +1,19 @@
+# Never publish Hand2Note runtime or personal data.
+*.exe
+*.dll
+*.pdb
+*.log
+*.zip
+*.7z
+*.bak
+*.h2nconfig
+
+Database/
+Databases/
+Logs/
+Hands/
+HandHistory/
+Import/
+Cache/
+Temp/
+backups/

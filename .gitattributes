@@ -1,0 +1,6 @@
+*.statprofile binary
+*.h2nstat binary
+*.sha256 text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ps1 text eol=crlf
