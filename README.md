@@ -165,3 +165,15 @@ Popup 展示的是历史牌谱样本中的行动倾向，不会自动给出最�
 
 本项目是独立社区项目，与 Hand2Note 官方没有关联，也未获得其赞助或背书。
 Hand2Note 名称及相关商标归其各自权利人所有。只能处理和安装自己有权使用的文件。
+
+## 作者与交流
+
+如果这个项目对你有帮助：
+
+- 给 [AAPP Popup Free](https://github.com/simidaaa/aapp-popup-free) 一个 Star；
+- 关注公众号：**扑克字典**，获取扑克研究、HUD / Popup 使用和版本更新内容；
+- 添加工作微信：`pokerpxx`（请备注 `AAPP Free`）；
+- Bug、安装问题和功能建议优先提交 [GitHub Issue](https://github.com/simidaaa/aapp-popup-free/issues)。
+
+`pokerpxx` 是项目维护者公开使用的工作微信，可用于产品交流与合作联系。下载和使用
+本项目不以关注公众号或添加微信为前提。
