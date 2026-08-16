@@ -7,6 +7,10 @@ AAPP Popup Free 是面向 Hand2Note 4.1 的免费德州扑克数据阅读 Popup�
 > English summary: A free, compact Hand2Note 4.1 popup for reading overall poker
 > action tendencies by pot type, role, position, street, and action line.
 
+![AAPP Popup Free 实际运行中的翻后行动线与颜色系统](docs/images/05-postflop-live-line-colors.png)
+
+*实际运行效果：按 Flop、Turn、River 阅读行动线，并用字体颜色区分最终动作。*
+
 ## 当前状态
 
 这是 `v0.1.0-beta.1` 候选版本。
@@ -16,6 +20,45 @@ AAPP Popup Free 是面向 Hand2Note 4.1 的免费德州扑克数据阅读 Popup�
 - Stat 可读命名、清理后的完整导入以及代表性无尺寸 Stat 的真实数据语义仍需在独立
   Hand2Note 环境中完成最终运行时复核；
 - 因此本版本是 Beta，不应被描述为所有环境均已验证的稳定版。
+
+## 界面预览
+
+### 翻前总体
+
+![AAPP Popup Free 实际运行中的翻前总体页面](docs/images/04-preflop-live-view.png)
+
+翻前总体页把 VPIP、PFR、3Bet、面对 3Bet、挤压、Limp 和 Iso 等常用指标集中在
+同一个入口，并保留位置维度。截图中的 `Hero`、`GG Network` 和统计数据已经由项目
+维护者明确授权公开。
+
+### 页面导航
+
+<p align="center">
+  <img src="docs/images/03-popup-navigation.png" alt="AAPP Popup Free 页面导航，展示翻前总体和 26 个翻后场景" width="320">
+</p>
+
+当前结构包含 1 个翻前总体页和 26 个翻后总体页。用户可以按底池类型、PFR / Caller、
+IP / OOP、BvB / 非 BvB 关系定位页面。
+
+### Line 颜色系统
+
+翻后页面中的 Line 颜色由最终动作决定：主动下注或加注使用红色，Call 使用绿色，
+Check 使用蓝色，Fold 使用灰色。完整文字始终保留，颜色只承担快速分类作用。
+
+<details>
+<summary>展开查看测试视图</summary>
+
+下面两张截图使用统一的 `99` 测试占位值，只用于展示布局、位置颜色和 Line 颜色，
+不代表真实玩家数据、产品准确率或盈利承诺。
+
+![AAPP Popup Free 翻前总体测试视图](docs/images/01-preflop-test-overview.png)
+
+![AAPP Popup Free 翻后 Line 颜色测试视图](docs/images/02-postflop-test-line-colors.png)
+
+</details>
+
+五张原始分辨率截图及其尺寸、SHA-256 和网站复用说明见
+[`docs/images/README.md`](docs/images/README.md)。
 
 ## 包含内容
 
@@ -41,7 +84,7 @@ Config/
 | 已知 Hand2Note 内置 Stat ID | 2 |
 | 非内置悬空引用 | 0 |
 
-完整文件哈希见 [`manifests/files.sha256`](manifests/files.sha256)，发布元数据见
+Config 发布负载的完整文件哈希见 [`manifests/files.sha256`](manifests/files.sha256)，发布元数据见
 [`manifests/release-manifest.json`](manifests/release-manifest.json)。
 
 ## Popup 结构
